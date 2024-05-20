@@ -1,4 +1,4 @@
-/* Background video */
+
 #backgroundVideo {
     position: fixed;
     top: 50%;
@@ -12,7 +12,6 @@
     background-size: cover;
 }
 
-/* Existing CSS */
 body {
     background-color: #f0f4f8;
     display: flex;
