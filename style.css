@@ -1,0 +1,112 @@
+/* Background video */
+#backgroundVideo {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    background-size: cover;
+}
+
+/* Existing CSS */
+body {
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+.ui {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    gap: 10px;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+}
+
+.cell {
+    border: none;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.cell:hover {
+    background-color: #e21d0f;
+    transform: scale(1.1) rotate(10deg);
+}
+
+.cell:active {
+    background-color: #666666;
+    transform: scale(0.9) rotate(-10deg);
+}
+
+.cell:active {
+    outline: none;
+}
+
+#b1, #b2, #b3, #b4, #b5, #b6, #b7, #b8, #b9 {
+    border: 1px solid gray;
+}
+
+#resetButton {
+    box-sizing: border-box;
+    width: 95px;
+    height: 40px;
+    border: 1px solid #e21d0f;
+    margin-top: 20px;
+    border-radius: 8px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: whitesmoke;
+    color: #e21d0f;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#resetButton:hover {
+    background-color: black;
+    color: whitesmoke;
+}
+
+#print {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #e21d0f;
+    font-size: 20px;
+}
+
+#main {
+    text-align: center;
+}
+
+#ins {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #e21d0f;
+}
